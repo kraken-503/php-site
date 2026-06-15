@@ -10,21 +10,57 @@
     body {
         margin: 0;
         font-family: "Poppins", sans-serif;
-        background: #f4f7fb;
+        background: #eef3f8;
         color: #333;
     }
 
     header {
         background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
         color: white;
-        padding: 20px;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .tagline {
+        font-style: italic;
+        opacity: 0.9;
+    }
+
+    marquee {
+        background: #ffd369;
+        padding: 10px;
+        font-weight: bold;
+        color: #222;
+    }
+
+    /* HERO */
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        filter: brightness(75%);
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
         text-align: center;
     }
 
-    .banner img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
+    .hero-text h1 {
+        font-size: 42px;
+        margin: 0;
+    }
+
+    .hero-text p {
+        font-size: 18px;
     }
 
     .container {
@@ -36,70 +72,89 @@
 
     h2 {
         color: #2c5364;
-        border-left: 5px solid #2c5364;
+        border-left: 6px solid #2c5364;
         padding-left: 10px;
-        margin-top: 30px;
+        margin-top: 35px;
     }
 
-    ul {
+    /* CARDS */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .card {
         background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: 0.3s;
     }
 
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card span {
+        font-size: 20px;
+    }
+
+    /* TABLE */
     table {
         width: 100%;
         border-collapse: collapse;
         background: white;
         border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-
-    th, td {
-        padding: 12px;
-        text-align: left;
-        border-bottom: 1px solid #eee;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
     th {
         background: #2c5364;
         color: white;
+        padding: 12px;
     }
 
+    td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    tr:hover {
+        background: #f1f6ff;
+    }
+
+    /* FORM */
     .form-box {
         background: white;
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
-    input, select, button {
+    input, select {
         width: 100%;
         padding: 10px;
-        margin-top: 10px;
+        margin-top: 8px;
         border-radius: 6px;
         border: 1px solid #ccc;
-        font-family: inherit;
-        box-sizing: border-box;
     }
 
     button {
-        background: #2c5364;
+        width: 100%;
+        padding: 12px;
+        margin-top: 15px;
+        background: linear-gradient(135deg, #2c5364, #203a43);
         color: white;
         border: none;
         cursor: pointer;
+        font-size: 16px;
+        border-radius: 6px;
     }
 
     button:hover {
         background: #1b2e3a;
-    }
-
-    marquee {
-        background: #ffd369;
-        padding: 10px;
-        font-weight: bold;
     }
 
     footer {
@@ -125,99 +180,92 @@
 <body>
 
 <header>
-    <h1><font color="orange">Roll Number: 24</font></h1>
-    <h2 style="border:none; color:#ffd369;">
-        <font color="#ffd369">Theme: Local Tourism Guide</font>
-    </h2>
-    <p><b><i>Explore Your Dream Destination with Style & Comfort</i></b></p>
+    <h1>Roll Number: 24</h1>
+    <h2 style="color:#ffd369; border:none;">Theme: Local Tourism Guide</h2>
+    <p class="tagline">Explore breathtaking destinations with elegance & comfort</p>
 </header>
 
-<marquee>🌍 Welcome to the Ultimate Travel Guide! Book your dream trip now and explore amazing destinations! 🌍</marquee>
+<marquee>🌍 Limited Offer: Explore Top Destinations at Affordable Prices | Book Now & Travel Smart 🌍</marquee>
 
-<div class="banner">
-    <img src="https://source.unsplash.com/1600x600/?travel,nature,beach" alt="Travel Banner">
+<div class="hero">
+    <img src="https://source.unsplash.com/1600x600/?beach,mountains,travel" alt="Travel Banner">
+    <div class="hero-text">
+        <h1>Discover Paradise</h1>
+        <p>Adventure • Culture • Nature • Memories</p>
+    </div>
 </div>
 
 <div class="container">
 
-    <h2><u>Top 5 Must-Visit Attractions</u></h2>
-    <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Mountain" target="_blank">Scenic Mountain Viewpoint</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Old_town" target="_blank">Historic Old Town Walk</a></li>
-        <li>Sunset Beach Experience</li>
-        <li>Local Cultural Museum</li>
-        <li>Adventure Nature Trail</li>
-    </ul>
+    <h2>Top 5 Must-Visit Attractions</h2>
+    <div class="cards">
+        <div class="card"><span>🏔</span><br>Mountain Viewpoint</div>
+        <div class="card"><span>🏛</span><br>Historic Old Town</div>
+        <div class="card"><span>🏖</span><br>Sunset Beach</div>
+        <div class="card"><span>🏺</span><br>Cultural Museum</div>
+        <div class="card"><span>🌿</span><br>Nature Trail</div>
+    </div>
 
-    <h2><u>Nearby Budget-Friendly Hotels</u></h2>
+    <h2>Nearby Budget Hotels</h2>
     <table>
         <tr>
-            <th>Hotel Name</th>
+            <th>Hotel</th>
             <th>Price</th>
             <th>Rating</th>
         </tr>
         <tr>
             <td>Budget Inn Stay</td>
-            <td>$40/night</td>
-            <td>4.1</td>
+            <td>$40</td>
+            <td>4.1 ⭐</td>
         </tr>
         <tr>
             <td>City Comfort Lodge</td>
-            <td>$55/night</td>
-            <td>4.3</td>
+            <td>$55</td>
+            <td>4.3 ⭐</td>
         </tr>
         <tr>
-            <td>Traveler's Rest Hotel</td>
-            <td>$50/night</td>
-            <td>4.0</td>
+            <td>Traveler Rest</td>
+            <td>$50</td>
+            <td>4.0 ⭐</td>
         </tr>
         <tr>
             <td>Green Valley Stay</td>
-            <td>$45/night</td>
-            <td>4.2</td>
+            <td>$45</td>
+            <td>4.2 ⭐</td>
         </tr>
     </table>
 
-    <h2><u>Quick Tour Booking Form</u></h2>
+    <h2>Quick Tour Booking</h2>
     <div class="form-box">
-        <form id="bookingForm">
+        <form>
+            <label>Name</label>
+            <input type="text" required>
 
-            <label><b>Name:</b></label>
-            <input type="text" placeholder="Your Name" required>
+            <label>Email</label>
+            <input type="email" required>
 
-            <label><b>Email:</b></label>
-            <input type="email" placeholder="Email Address" required>
-
-            <label><b>Date of Travel:</b></label>
+            <label>Date</label>
             <input type="date" required>
 
-            <label><b>Number of People:</b></label>
-            <input type="number" placeholder="Enter number of people" required>
+            <label>People</label>
+            <input type="number" required>
 
-            <label><b>Package Type:</b></label>
+            <label>Package</label>
             <select>
                 <option>Standard</option>
                 <option>Premium</option>
                 <option>Luxury</option>
             </select>
 
-            <button type="submit">Book Now</button>
+            <button type="submit">Confirm Booking</button>
         </form>
     </div>
 
 </div>
 
 <footer>
-    © 2026 <b>Tourism Guide</b> | Designed for Academic Project
+    © 2026 Tourism Guide | Designed for Academic Excellence
 </footer>
 
-<script>
-document.getElementById("bookingForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Booking received! We will contact you soon.");
-    this.reset();
-});
-</script>
-
 </body>
-</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+</html>                        
