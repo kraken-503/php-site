@@ -1,271 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Local Tourism Guide</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-    body {
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        background: #eef3f8;
-        color: #333;
-    }
-
-    header {
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-        color: white;
-        text-align: center;
-        padding: 25px;
-    }
-
-    .tagline {
-        font-style: italic;
-        opacity: 0.9;
-    }
-
-    marquee {
-        background: #ffd369;
-        padding: 10px;
-        font-weight: bold;
-        color: #222;
-    }
-
-    /* HERO */
-    .hero {
-        position: relative;
-    }
-
-    .hero img {
-        width: 100%;
-        height: 420px;
-        object-fit: cover;
-        filter: brightness(75%);
-    }
-
-    .hero-text {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-    }
-
-    .hero-text h1 {
-        font-size: 42px;
-        margin: 0;
-    }
-
-    .hero-text p {
-        font-size: 18px;
-    }
-
-    .container {
-        width: 90%;
-        max-width: 1100px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    h2 {
-        color: #2c5364;
-        border-left: 6px solid #2c5364;
-        padding-left: 10px;
-        margin-top: 35px;
-    }
-
-    /* CARDS */
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-    }
-
-    .card {
-        background: white;
-        padding: 15px;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        transition: 0.3s;
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-    }
-
-    .card span {
-        font-size: 20px;
-    }
-
-    /* TABLE */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        background: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    th {
-        background: #2c5364;
-        color: white;
-        padding: 12px;
-    }
-
-    td {
-        padding: 12px;
-        border-bottom: 1px solid #eee;
-    }
-
-    tr:hover {
-        background: #f1f6ff;
-    }
-
-    /* FORM */
-    .form-box {
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    input, select {
-        width: 100%;
-        padding: 10px;
-        margin-top: 8px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-    }
-
-    button {
-        width: 100%;
-        padding: 12px;
-        margin-top: 15px;
-        background: linear-gradient(135deg, #2c5364, #203a43);
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        border-radius: 6px;
-    }
-
-    button:hover {
-        background: #1b2e3a;
-    }
-
-    footer {
-        text-align: center;
-        padding: 15px;
-        margin-top: 30px;
-        background: #0f2027;
-        color: white;
-    }
-
-    a {
-        color: #2c5364;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Local Tourism Guide</title>
 </head>
-
 <body>
+<font face="Arial">
 
-<header>
-    <h1>Roll Number: 24</h1>
-    <h2 style="color:#ffd369; border:none;">Theme: Local Tourism Guide</h2>
-    <p class="tagline">Explore breathtaking destinations with elegance & comfort</p>
-</header>
+    <header>
+        <h1>Roll Number: 24</h1>
+        <h2>Theme: Local Tourism Guide</h2>
+        <p>Explore breathtaking destinations with elegance & comfort</p>
+    </header>
 
-<marquee>🌍 Limited Offer: Explore Top Destinations at Affordable Prices | Book Now & Travel Smart 🌍</marquee>
+    <marquee>🌍 Limited Offer: Explore Top Destinations at Affordable Prices | Book Now & Travel Smart 🌍</marquee>
 
-<div class="hero">
-    <img src="https://source.unsplash.com/1600x600/?beach,mountains,travel" alt="Travel Banner">
-    <div class="hero-text">
-        <h1>Discover Paradise</h1>
-        <p>Adventure • Culture • Nature • Memories</p>
-    </div>
-</div>
-
-<div class="container">
-
-    <h2>Top 5 Must-Visit Attractions</h2>
-    <div class="cards">
-        <div class="card"><span>🏔</span><br>Mountain Viewpoint</div>
-        <div class="card"><span>🏛</span><br>Historic Old Town</div>
-        <div class="card"><span>🏖</span><br>Sunset Beach</div>
-        <div class="card"><span>🏺</span><br>Cultural Museum</div>
-        <div class="card"><span>🌿</span><br>Nature Trail</div>
+    <div>
+        <img src="https://source.unsplash.com/1600x600/?beach,mountains,travel" alt="Travel Banner">
+        <div>
+            <h1>Discover Paradise</h1>
+            <p>Adventure • Culture • Nature • Memories</p>
+        </div>
     </div>
 
-    <h2>Nearby Budget Hotels</h2>
-    <table>
-        <tr>
-            <th>Hotel</th>
-            <th>Price</th>
-            <th>Rating</th>
-        </tr>
-        <tr>
-            <td>Budget Inn Stay</td>
-            <td>$40</td>
-            <td>4.1 ⭐</td>
-        </tr>
-        <tr>
-            <td>City Comfort Lodge</td>
-            <td>$55</td>
-            <td>4.3 ⭐</td>
-        </tr>
-        <tr>
-            <td>Traveler Rest</td>
-            <td>$50</td>
-            <td>4.0 ⭐</td>
-        </tr>
-        <tr>
-            <td>Green Valley Stay</td>
-            <td>$45</td>
-            <td>4.2 ⭐</td>
-        </tr>
-    </table>
+    <div>
 
-    <h2>Quick Tour Booking</h2>
-    <div class="form-box">
-        <form>
-            <label>Name</label>
-            <input type="text" required>
+        <h2>Top 5 Must-Visit Attractions</h2>
+        <div>
+            <div><span>🏔</span><br>Mountain Viewpoint</div>
+            <div><span>🏛</span><br>Historic Old Town</div>
+            <div><span>🏖</span><br>Sunset Beach</div>
+            <div><span>🏺</span><br>Cultural Museum</div>
+            <div><span>🌿</span><br>Nature Trail</div>
+        </div>
 
-            <label>Email</label>
-            <input type="email" required>
+        <h2>Nearby Budget Hotels</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Hotel</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Budget Inn Stay</td>
+                    <td>$40</td>
+                    <td>4.1 ⭐</td>
+                </tr>
+                <tr>
+                    <td>City Comfort Lodge</td>
+                    <td>$55</td>
+                    <td>4.3 ⭐</td>
+                </tr>
+                <tr>
+                    <td>Traveler Rest</td>
+                    <td>$50</td>
+                    <td>4.0 ⭐</td>
+                </tr>
+                <tr>
+                    <td>Green Valley Stay</td>
+                    <td>$45</td>
+                    <td>4.2 ⭐</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <label>Date</label>
-            <input type="date" required>
+        <h2>Quick Tour Booking</h2>
+        <div>
+            <form>
+                <p>
+                    <label>Name</label><br>
+                    <input type="text" required>
+                </p>
 
-            <label>People</label>
-            <input type="number" required>
+                <p>
+                    <label>Email</label><br>
+                    <input type="email" required>
+                </p>
 
-            <label>Package</label>
-            <select>
-                <option>Standard</option>
-                <option>Premium</option>
-                <option>Luxury</option>
-            </select>
+                <p>
+                    <label>Date</label><br>
+                    <input type="date" required>
+                </p>
 
-            <button type="submit">Confirm Booking</button>
-        </form>
+                <p>
+                    <label>People</label><br>
+                    <input type="number" required>
+                </p>
+
+                <p>
+                    <label>Package</label><br>
+                    <select>
+                        <option>Standard</option>
+                        <option>Premium</option>
+                        <option>Luxury</option>
+                    </select>
+                </p>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+
     </div>
 
-</div>
+    <p>
+        For more information, visit the <a href="https://www.wikipedia.org/wiki/Tourism" target="_blank">Official Tourism Portal</a>.
+    </p>
 
-<footer>
-    © 2026 Tourism Guide | Designed for Academic Excellence
-</footer>
+    <footer>
+        <p>© 2026 Tourism Guide | Designed for Academic Excellence</p>
+    </footer>
 
+</font>
 </body>
-</html>                        
+</html>
